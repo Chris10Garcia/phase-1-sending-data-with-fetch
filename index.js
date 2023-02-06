@@ -19,6 +19,6 @@ function submitData(userName, userEmail){
         })
         .catch(error => {
             alert("Something went wrong")
-            console.log(error.message)
+            document.querySelector('body').append(error.message)
         })
 }
